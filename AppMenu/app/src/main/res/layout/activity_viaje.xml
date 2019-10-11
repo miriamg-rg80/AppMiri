@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:background="#F3DF4B"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Viajes"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="10pt"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kilómetros:"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="8pt"
+            android:gravity="left"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:hint=""
+            android:inputType="numberDecimal"
+            android:id="@+id/etxKm" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio de la gasolina:"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="8pt"
+            android:gravity="left"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:hint=""
+            android:inputType="numberDecimal"
+            android:id="@+id/etxGas"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dinero gastado en gasolina:"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="8pt"
+            android:gravity="left"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:hint=""
+            android:inputType="numberDecimal"
+            android:id="@+id/etxGasViaje"
+           />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tiempo del viaje:"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="8pt"
+            android:gravity="left"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Horas:"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="8pt"
+            android:gravity="left"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:hint=""
+            android:inputType="numberDecimal"
+            android:id="@+id/etxHoras" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Minutos:"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="8pt"
+            android:gravity="left"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:hint=""
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:inputType="numberDecimal"
+            android:id="@+id/etxMinutos"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar una opción"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="8pt"
+            android:gravity="left"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgpOpciones">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="100 km/h"
+                android:textColor="@android:color/holo_red_dark"
+                android:id="@+id/rdb100km"
+                android:textSize="8pt"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:text="1 Km/h"
+                android:id="@+id/rdb1km"
+                android:textSize="8pt"/>
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:textSize="8pt"
+            android:id="@+id/btnCalcular"/>
+
+        <TextView
+            android:id="@+id/txvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="8pt" />
+
+        <Button
+            android:id="@+id/btnRegresar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            android:textSize="8pt" />
+
+    </LinearLayout>
+</ScrollView>

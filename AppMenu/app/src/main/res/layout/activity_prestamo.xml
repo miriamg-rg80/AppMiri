@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:background="#F3DF4B"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Prestamo"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="10pt"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monto del préstamo:"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="8pt"
+            android:gravity="left"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:hint=""
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:inputType="numberDecimal"
+            android:id="@+id/etxMonto"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Interés anual:"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="8pt"
+            android:gravity="left"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="8pt"
+            android:hint=""
+            android:background="#ffffff"
+            android:textColor="#000000"
+            android:inputType="numberDecimal"
+            android:id="@+id/etxInteresAnual" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plazo:"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="8pt"
+            android:gravity="left"/>
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rgpOpciones">
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6 meses"
+                android:textColor="@android:color/holo_red_dark"
+                android:id="@+id/rdb6meses"
+                android:textSize="8pt"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="12 meses"
+                android:textColor="@android:color/holo_red_dark"
+                android:id="@+id/rdb12meses"
+                android:textSize="8pt"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="18 meses"
+                android:textColor="@android:color/holo_red_dark"
+                android:id="@+id/rdb18meses"
+                android:textSize="8pt"/>
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24 meses"
+                android:textColor="@android:color/holo_red_dark"
+                android:id="@+id/rdb24meses"
+                android:textSize="8pt"/>
+        </RadioGroup>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Calcular"
+            android:textSize="8pt"
+            android:id="@+id/btnCalcular"/>
+
+        <TextView
+            android:id="@+id/txvResultado"
+            android:layout_width="match_parent"
+            android:layout_height="114dp"
+            android:textSize="8pt" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Regresar"
+            android:textSize="8pt"
+            android:id="@+id/btnRegresar"/>
+
+    </LinearLayout>
+</ScrollView>
